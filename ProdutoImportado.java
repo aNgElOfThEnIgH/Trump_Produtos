@@ -1,4 +1,4 @@
-public class ProdutoImportado extends Produto{
+public class ProdutoImportado extends Produto {
     
     //Atributos
     private String origem;
