@@ -14,7 +14,11 @@ public class ProdutoImportado extends Produto{
     @Override
     public double calcularPrecoVenda() {
         // TODO Auto-generated method stub
-        return super.calcularPrecoVenda() + (super.getPreco()*(this.aliquota / 100));
+        if(super.getPreco() > 250){
+            return super.calcularPrecoVenda() + (super.getPreco()*(this.aliquota/100));
+        } else {
+            return super.calcularPrecoVenda();
+        }
     }
 
     public String getOrigem() {
